@@ -2,6 +2,8 @@
 
 # **Introduction**
 
+https://www.kaggle.com/competitions/birdclef-2025 
+
 Mobile and habitat-diverse species serve as key biodiversity indicators, as their population dynamics reflect ecological restoration success. However, traditional biodiversity surveys are costly and logistically complex. Passive acoustic monitoring (PAM), combined with machine learning, enables large-scale biodiversity assessments with higher temporal resolution, improving insights into restoration efforts.  
 
 This competition focuses on developing machine learning models to identify species from acoustic data, especially those under-studied. Participants will create computational methods to process continuous audio and recognize species with minimal labeled data. Successful models will support biodiversity monitoring efforts, particularly in Colombia’s Magdalena Valley lowlands.  
@@ -231,5 +233,5 @@ We achieve this using Silero's VAD model for Torch, which directly provides time
 
 Thanks to ``Silero_VAD``, a **voice activity detection** model, we processed each audio file to obtain **timestamps** (in seconds) indicating where speech occurs.
 
-I also created a function that takes the ``filename`` and a list of **timestamps**, then removes those segments from the audio file.
+I also created a function that takes the ``filename`` and a list of **timestamps**, then removes those segments from the audio file.I named this function `remove_audio_voices`.
 
